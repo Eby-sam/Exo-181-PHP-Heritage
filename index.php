@@ -9,13 +9,14 @@ require "classes/Princesse.php";
 // Creation d'une instance de la classe personnage
 $humain = new personnage();
 $humain->setNom("Sam");
-echo "Vie pour personnage: ".$humain->getVie()."<br>";
+echo "Vie pour personnage: ".$humain->getVie()."<br><br>";
 
 // Creation d'une instance de la classe dragon
 $dragon = new dragon();
 $dragon->setNom("SamSam");
-echo "Vie pour dragon: ".$dragon->getVie();
+echo "Vie pour dragon: ".$dragon->getVie()."<br><br>";
 
-$dragon = new princesse();
-$dragon->setNom("tsunade");
-echo "Vie pour dragon: ".$dragon->getVie();
+$princess = new princesse();
+$princess->setNom("tsunade");
+echo "Vie pour princesse: ".$princess->getVie()."<br>";
+echo "nom de la princesse: ".$princess->getnom()."<br>";
